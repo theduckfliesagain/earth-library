@@ -1,0 +1,16 @@
+{% extends "books/base.html" %}
+
+{% block content %}
+    <h1>LIB-CPU-1: Welcome to The Earth Library!</h1>
+    <p>In the library we have books! Here are some of the most recent additions.</p>
+    <ul id="books-container">
+        {% for book in books %}
+            <li>
+                <a href="{% url 'books:show' book.id %}">
+                    {{ book.title }} by {{book.author}}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
