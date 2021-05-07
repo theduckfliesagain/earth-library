@@ -44,6 +44,10 @@ input, button {
     text-align: center;
 }
 
+.errorlist {
+    color: rgb(230, 71, 71);
+}
+
 #alert { 
     padding: 1rem;
     background-color: indianred;
