@@ -4,9 +4,28 @@
     <h1>{{book.title}}</h1>
     <h3>{{book.author}}</h3>
     {% if book.borrower %}
-    <p>AVAILIBILITY: FALSE</p>
+        {% if book.borrower == user %}
+        <p>ACCESS: GRANTED</p>
+        {% else %}
+        <p>AVAILIBILITY: FALSE</p>
+        {% endif %}
     {% else %}
     <p>AVAILIBILITY: TRUE</p>
     {% endif %}
 
+    
+     <div class="borrow-form">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if not book.borrower %}
+            <input type="submit" value="Borrow">
+            {% elif book.borrower == user %}
+            <input type="submit" value="Return">
+            {% else %}
+            <input type="submit" value="Borrow" disabled>
+            {% endif %}
+        </form>
+    </div>
+    
 {% endblock content %}
