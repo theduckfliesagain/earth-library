@@ -19,5 +19,11 @@
         {% block content%}
         {% endblock %}
     </main>
+
+    {% if messages %}
+        {% for m in messages %}
+            <section id="alert">{{m}}</section>
+        {% endfor %}
+    {% endif %}
 </body>
 </html>
