@@ -34,7 +34,7 @@ main { padding: 1.5rem; }
 
 ul li { list-style: none; }
 
-li a { color: indianred; }
+li a { color: rgb(62, 84, 145); }
 
 input, button {
     display: block;
@@ -50,9 +50,9 @@ input, button {
 
 #alert { 
     padding: 1rem;
-    background-color: indianred;
+    background-color: rgb(92, 150, 205);
     color: black;
-    opacity: 0.3;
+    opacity: 0.7;
     text-align: center;
 }
 
