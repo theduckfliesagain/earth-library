@@ -5,4 +5,5 @@ app_name = 'books'
 urlpatterns = [
     path('', views.index, name='index'),
     path('<int:book_id>/', views.show, name='show'),
+    path('new/', views.new, name='new'),
 ]
