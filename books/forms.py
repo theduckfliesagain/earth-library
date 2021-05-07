@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import widgets
-from .models import Book
+from .models import Author, Book
 
 class NewBookForm(forms.ModelForm):
     class Meta:
@@ -15,4 +15,8 @@ class BorrowBookForm(forms.ModelForm):
         widgets = {"borrower" : forms.HiddenInput()}
 
 
-    
+class NewAuthorForm(forms.ModelForm):
+    class Meta:
+        model = Author
+        fields = ("name",)
+
