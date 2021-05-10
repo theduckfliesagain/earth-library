@@ -3,26 +3,6 @@
 
 A small CRUD application allowing authenticated users to borrow and return books from the Earth Library.
 
-
-    * Must have:
-        * Project title
-        * Project description
-        * Installation & usage
-        * Technologies
-        * Process
-        * Licence
-
-    * Should have:
-        * Screenshots/Images
-        * Wins & Challenges
-
-    * Could have:
-        * Badges
-        * Contribution guide
-        * Code snippets
-        * Bugs
-        * Future features
-
 ## Installation & Usage
 
 Visit [Earth Library](https://earth-library.herokuapp.com/books/)
